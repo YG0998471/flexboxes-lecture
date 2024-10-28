@@ -8,9 +8,11 @@ html {
     font-size: 2em;
     font-family: arial;
 }
+
 .box {
     text-align: center;
-    /* margin:25px; */
+     /* margin:25px;  */
+     flex-grow: 1;
 
 }
 
@@ -20,8 +22,8 @@ html {
 }
 
 .box2 {
-    background: #3498db; 
-    
+    background: #3498db;
+
 }
 
 .box3 {
@@ -30,13 +32,18 @@ html {
 
 .box4 {
     background: #34495e;
-    
+
 }
 
 .box5 {
     background: #f1c40f;
-    
-    
+    /* order: 1; */
+    /* flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 200px; */
+    flex: 1 2 500;
+
+
 }
 
 
@@ -46,9 +53,14 @@ html {
 }
 
 .menu {
-    
+
     background-color: grey;
-    
+    display: flex;
+    /* flex-flow: row nowrap; */
+    /* justify-content: center;
+    align-items: stretch;
+    align-content: center; */
+    height: 400px;
 }
 
 p {
